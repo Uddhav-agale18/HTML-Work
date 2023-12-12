@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+
+form .user-details .input {
+    margin-bottom: 15px;
+    width: calc(100% /2-20px);
+}
+
+.user-details .input .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s eases;
+}
+
+.user-details,
+input input:focus {
+    border-color: #9b59b6;
+}
+
+form .gender .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender .category label {
+    display: flex;
+    align-items: center;
+}
+
+.gender .category .dot {
+    height: 18px;
+    width: 18px;
+    background: rgb(227, 151, 214);
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #095384);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #4880a6, #2ab760);
+}
